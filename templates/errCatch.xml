@@ -1,0 +1,12 @@
+<templateSet group="errCatch">
+  <template name="try" value="try {&#10;    $START$&#10;} catch(err) {&#10;    $END$&#10;}" description="tryCatch" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="trycf" value="try {&#10;    $START$&#10;} catch(err) {&#10;    $SECOND$&#10;} finaly {&#10;    $END$&#10;}" description="tryCatchFinaly" toReformat="false" toShortenFQNames="true">
+    <variable name="START" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SECOND" expression="" defaultValue="" alwaysStopAt="true" />
+  </template>
+</templateSet>
